@@ -1,0 +1,71 @@
+.pigeon__head {
+    top: -177px;
+    left: 0px;
+    width: 114px;
+    height: 193px;
+    background: radial-gradient(circle, #5e7d82 71%, transparent 0%) 0% 0% /55px 55px no-repeat, linear-gradient(45deg, #5e7d82, #5e7d82) 0 27px / 55px 170px no-repeat, linear-gradient(69deg, #5e7d82 53%, transparent 54%) 54px 24px / 59px 173px no-repeat;
+    border-radius: 0px 0px 0px 21px;
+    transform-origin: bottom left;
+    transform: rotate(-3deg);
+}
+
+.pigeon__head::before {
+    top: 40px;
+    left: 0px;
+    width: 59px;
+    height: 70px;
+    background: radial-gradient(ellipse at 50% 50%, #3c3048 50%, transparent 0%) -14px -5px / 110% 100% no-repeat;
+}
+
+.pigeon__nose {
+    top: 56px;
+    left: 8px;
+    width: 33px;
+    height: 25px;
+    background: #edbe26;
+    border-radius: 25px 8px 10px 23px / 12px 6px 19px 13px;
+    transform: rotate(-45deg);
+}
+
+.pigeon__face::before {
+    top: 33px;
+    left: -12px;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient( 
+0deg, transparent 50%, #5e7d82 0%), linear-gradient( 
+0deg, #5e7d82 50%, transparent 0%), radial-gradient(circle, #363148 25%, transparent 26%) 3px -3px no-repeat, white;
+    border-radius: 50%;
+}
+
+.pigeon__face::after {
+    top: 22px;
+    left: 14px;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient( 
+0deg, transparent 50%, #5e7d82 0%), linear-gradient( 
+0deg, #5e7d82 50%, transparent 0%), radial-gradient(circle, #363148 25%, transparent 26%) 3px -3px no-repeat, white;
+    border-radius: 50%;
+}
+
+
+.knife {
+    top: 14px;
+    left: -9px;
+    width: 156px;
+    height: 23px;
+    background: linear-gradient(50deg, transparent 72%, white 73%, white 92%, transparent 93%), linear-gradient(90deg, #383048 38%, #91c0c6 0%);
+    border-radius: 4px 50% 4px 4px / 4px 18px 4px 4px;
+    transform-origin: 20px 11px;
+    transform: rotate(-129deg);
+}
+
+.knife::before {
+    top: -20px;
+    left: 44px;
+    width: 15px;
+    height: 63px;
+    background: #383048;
+    border-radius: 99em;
+}

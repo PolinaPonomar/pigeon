@@ -1,0 +1,164 @@
+body, html {margin: 0; padding: 0; background-color: gainsboro;}
+
+body {
+    width: 800px;
+    height: 600px; 
+    --animation: 3s linear infinite; /* css-переменная */
+}
+
+body *, body *::before, body *::after {
+    position: absolute;
+    content: '';
+}
+
+.pigeon {
+    left: 400px;
+    top: 475px;
+}
+
+/* тень */
+.pigeon::before {
+    top: -10px;
+    left: -100px;
+    width: 200px;
+    height: 20px;
+    border-radius: 50%;
+    background: #c4c4c4;
+}
+
+.pigeon__legs::before {
+    left: -15px;
+    top: 0;
+    width: 14px;
+    height: 82px;
+    border-radius: 99rem;
+    background: #e2b00e;
+    transform-origin: top center;
+    transform: rotate(160deg);
+}
+
+.pigeon__legs::after {
+    left: 2px;
+    top: 0;
+    width: 14px;
+    height: 82px;
+    border-radius: 99rem;
+    background: #edbe26;
+    transform-origin: top center;
+    transform: rotate(160deg);
+    z-index: 1;
+}
+
+/* тушка для анимации */
+.pigeon__body {
+    top: -139px;
+    left: -109px;
+    width: 175px;
+    height: 87px;
+    transform: rotate(25deg);
+}
+
+/* тушка */
+.pigeon__body::after {
+    width: 100%;
+    height: 100%;
+    background: #5e7d82;
+    border-radius: 0px 10px 60% 50% / 0px 10px 90% 110%;
+}
+
+/* хвостик */
+.pigeon__body::before {
+    top: 0px;
+    right: 6px;
+    width: 57px;
+    height: 57px;
+    background: #383048;
+    border-radius: 0px 7px 50px 0px;
+    transform-origin: top left;
+    transform: rotate(-64deg);
+}
+
+.pigeon__head {
+    top: -177px;
+    left: 0px;
+    width: 114px;
+    height: 193px;
+    background: 
+        radial-gradient(circle, #5e7d82 71%, transparent 0%) 0% 0% /55px 55px no-repeat,
+        linear-gradient(45deg, #5e7d82, #5e7d82) 0 27px / 55px 170px no-repeat, 
+        linear-gradient(69deg, #5e7d82 53%, transparent 54%) 54px 24px / 59px 173px no-repeat;
+    border-radius: 0px 0px 0px 21px;
+    transform-origin: bottom left;
+    transform: rotate(-3deg);
+}
+
+/* тень под клювом */
+.pigeon__head::before {
+    top: 40px;
+    left: 0px;
+    width: 59px;
+    height: 70px;
+    background: radial-gradient(ellipse at 50% 50%, #3c3048 50%, transparent 0%) -14px -5px / 110% 100% no-repeat;
+}
+
+.pigeon__nose {
+    top: 56px;
+    left: 8px;
+    width: 33px;
+    height: 25px;
+    background: #edbe26;
+    border-radius: 25px 8px 10px 23px / 12px 6px 19px 13px;
+    transform: rotate(-45deg);
+}
+
+/* левый глаз */
+.pigeon__face::before {
+    top: 33px;
+    left: -12px;
+    width: 44px;
+    height: 44px;
+    background: 
+        linear-gradient( 0deg, transparent 50%, #5e7d82 0%), /* верхнее веко */
+        linear-gradient( 0deg, #5e7d82 50%, transparent 0%), /* нижнее веко */
+        radial-gradient(circle, #363148 25%, transparent 26%) 3px -3px no-repeat, /* зрачок */
+        white; /* белок */
+    border-radius: 50%;
+}
+
+/* правый глаз */
+.pigeon__face::after {
+    top: 22px;
+    left: 14px;
+    width: 44px;
+    height: 44px;
+    background: 
+        linear-gradient( 0deg, transparent 50%, #5e7d82 0%), /* верхнее веко */
+        linear-gradient( 0deg, #5e7d82 50%, transparent 0%), /* нижнее веко */
+        radial-gradient(circle, #363148 25%, transparent 26%) 3px -3px no-repeat, /* зрачок */
+        white; /* белок */
+    border-radius: 50%;
+}
+
+
+.knife {
+    top: 14px;
+    left: -9px;
+    width: 156px;
+    height: 23px;
+    background: 
+        linear-gradient(50deg, transparent 72%, white 73%, white 92%, transparent 93%), /* лезвие */
+        linear-gradient(90deg, #383048 38%, #91c0c6 0%); /* рукоять */
+    border-radius: 4px 50% 4px 4px / 4px 18px 4px 4px;
+    transform-origin: 20px 11px;
+    transform: rotate(-129deg);
+}
+
+/* горизонтальная часть рукояти ножа */
+.knife::before {
+    top: -20px;
+    left: 44px;
+    width: 15px;
+    height: 63px;
+    background: #383048;
+    border-radius: 99em;
+}
